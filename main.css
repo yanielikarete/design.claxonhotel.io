@@ -111,6 +111,22 @@ header {
     height: 84px;
 }
 
+@font-face {
+    font-family: "myCochin";
+    src: url('fonts/Cochin.ttc');
+}
+
+.homeTextContainer {
+    padding: 5% 20%;
+    text-align: center;
+    font-family: 'myCochin' sans-serif;
+}
+
+.homeTextContainer h1 {
+    padding-bottom: 30px;
+
+}
+
 @media (min-width: 1024px) {
     .menu {
         margin-left: -280px;
