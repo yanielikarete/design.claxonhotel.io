@@ -17,9 +17,8 @@ body {
     width: 100%;
 }
 
-ul {
+header ul {
     list-style: none;
-    
 }
 
 /* Navigation */
@@ -36,7 +35,11 @@ ul {
 
 .nav-main a {
     text-decoration: none;
-    /* font-family: sans-serif; */
+    color: #f1f1f1;
+}
+
+.nav-main a:hover {
+    color: #000;
 }
 
 .menu {
@@ -73,9 +76,24 @@ ul {
 #sCover {
     width:100%;
     height:100vh;
-    background-image: url(img/ceil_lamp.jpg);
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55)), url(img/8d2cb53c5f456001f23384f5d05052906570d5ff4b926aa16f5547ecf7f8617a1b2fa87caf62550537a68e21bc29c55949bb1c15da32e6d41ee296_1280.jpg);
     background-size: cover;
-    /* background-position: 50% 50%; */
+    background-position: 10px 50%;
+    border: 1px solid black;
+    margin-top: -84px;
+    opacity: 0.5;
+    position: relative;
+    z-index: -1;
+}
+
+#sCover img {
+    height: 60%;
+    margin: auto;
+}
+
+header {
+    z-index: 10;
+    background-color: transparent;
 }
 
 .bookbtn {
@@ -122,7 +140,8 @@ ul {
     }
 }
 
-@media (max-width: 425px){
+/* @media (max-width: 425px){ */
+@media (max-width: 700px) {
     .nav-main {
         font-size: 18px;
         display: flex;

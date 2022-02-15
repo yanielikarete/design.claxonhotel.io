@@ -9,16 +9,19 @@
     <!--CUSTOM FONT-->
     <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@300&display=swap" rel="stylesheet">
     <!--CUSTOM STYLE-->
+    <link rel="stylesheet" href="cover_slide.css">
+
     <link rel="stylesheet" href="main.css">
 </head>
 
 <body>
     <div class="container-full">
-        <header id="sCover">
+        <header>
             <nav class="nav-main">
                 <div class="marcador">
                     <span>EXPERIENCIES</span>
-                    <span><</span>
+                    <span>
+                        <</span>
                 </div>
                 <div class="menu" onclick="openNav()">
                     <div class="hov"></div>
@@ -27,13 +30,13 @@
                 </div>
                 <div id="mySidenav" class="sidenav">
                     <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-                    <br/>
-                    <br/>
+                    <br />
+                    <br />
                     <a href="#">About</a>
                     <a href="#">Services</a>
                     <a href="#">Clients</a>
                     <a href="#">Contact</a>
-                  </div>
+                </div>
                 <img class="logo" src="img/logo1.png" alt="logo" />
                 <ul class="langSelector">
                     <li><a href="#">ES</a></li>
@@ -42,11 +45,53 @@
                 <button class="bookbtn">BOOK NOW</button>
             </nav>
         </header>
-        <section>
-            <h2>adadasasd</h2>
+        <!-- <section id="sCover">
+            <img src="img/BotonBook_Mesadetrabajo1copia.png" alt=" " />
+        </section> -->
+        <section id="container-slider">
+            <!-- <a href="fntExecuteSlide('prev')" class="arrowPrev"><i
+                    class="fas fa-chevron-circle-left"></i></a>
+            <a href="javascript: fntExecuteSlide('next');" class="arrowNext"><i
+                    class="fas fa-chevron-circle-right"></i></a> -->
+            <ul class="listslider">
+                <li><a itlist="itList_0" href="#" class="item-select-slid"></a></li>
+                <li><a itlist="itList_1" href="#"></a></li>
+                <li><a itlist="itList_2" href="#"></a></li>
+            </ul>
+            <ul id="slider">
+                <li
+                    style="background-image: url('img/68bfa372be234c6fef0fac68beb08bf91eaa9201e5a730575eafc3244a1d489b3ec9757fd3ccbd5bb983555713d2948b26ff6ca4e8bb1d8b33a318_1280.jpg'); z-index:0; opacity: 1;">
+                    <div class="content_slider">
+                        <div>
+                            <!-- <h2>Emprendimiento empresarial</h2>
+                            <p>Descubra en qué consiste el emprendimiento empresarial por medio de 5 estrategias
+                                fundamentales.</p>
+                            <a href="#" class="btnSlider">Ver más</a> -->
+                            <img src="img/BotonBook_Mesadetrabajo1copia.png" alt="" />
+                        </div>
+                    </div>
+                </li>
+                <li
+                    style="background-image: url('img/52dbd54b97a05ec221dd65d8ba4a3a88ac4ea7907a0acbf1d58ef5d9cbf27c540e0c97e230d81888012248a563e7e002ed82dbb7cb037896ee3ba3_1280.jpg'); ">
+                    <div class="content_slider">
+                        <div>
+                            <img src="img/BotonBook_Mesadetrabajo1copia.png" alt="" />
+                        </div>
+                    </div>
+                </li>
+                <li
+                    style="background-image: url('https://cdn.pixabay.com/photo/2015/07/17/22/42/typing-849806_960_720.jpg'); ">
+                    <div class="content_slider">
+                        <div>
+                            <img src="img/BotonBook_Mesadetrabajo1copia.png" alt="" />
+                        </div>
+                    </div>
+                </li>
+            </ul>
         </section>
     </div>
     <script src="main.js"></script>
+    <script defer src="cover_slide.js"></script>
 </body>
 
 </html>
