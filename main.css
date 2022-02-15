@@ -1,0 +1,274 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Barlow Condensed', sans-serif;
+}
+
+.container {
+    width: 90%;
+    margin: auto;
+}
+
+.container-full {
+    width: 100%;
+}
+
+ul {
+    list-style: none;
+    
+}
+
+/* Navigation */
+
+.nav-main {
+    font-size: 18px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 84px;
+    padding: 20px 0;
+    
+}
+
+.nav-main a {
+    text-decoration: none;
+    /* font-family: sans-serif; */
+}
+
+.menu {
+    cursor: pointer;
+    margin-left: -126px;
+}
+
+.menu:hover div.hov{
+    background-color: aquamarine;
+}
+
+.menu div {
+    display: block; 
+    width: 30px;
+    height: 3px;
+    background-color: black;
+    margin: 6px 4px;   
+}   
+
+.nav {
+    display: none;
+}
+
+.marcador {
+    margin-left: 10%;
+}
+
+/* Logo */
+.logo {
+    margin: 0;
+    height: 150%;
+}
+
+#sCover {
+    width:100%;
+    height:100vh;
+    background-image: url(img/ceil_lamp.jpg);
+    background-size: cover;
+    /* background-position: 50% 50%; */
+}
+
+.bookbtn {
+    padding-right: 40px;
+    padding-left: 40px;
+    background-color: midnightblue;
+    color: whitesmoke;
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 24px;
+    height: 84px;
+}
+
+@media (min-width: 1024px) {
+    .menu {
+        margin-left: -280px;
+    }
+
+    .logo {
+        margin-left: -116px;
+        margin-right: 10px;
+        height: 120%;
+    }
+
+    .langSelector {
+        margin-left: -75px;
+    }
+
+    .bookbtn {
+        margin-left: -276px;
+    }
+}
+
+@media (max-width: 768px) {
+    .marcador {
+        margin-left: 40px;
+    }
+
+    .menu {
+        margin-left: -88px;
+    }
+
+    .bookbtn {
+        margin-left: -78px;
+    }
+}
+
+@media (max-width: 425px){
+    .nav-main {
+        font-size: 18px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 180px;
+        padding: 20px 0;
+        margin-top: -10px;
+        padding-top: 0;
+    }
+
+    .marcador {
+        margin-left: 10px;
+        margin-top: 15px;
+        margin-left: 10px;
+        display: -webkit-inline-box;
+    }
+
+    .menu {
+        cursor: pointer;
+        margin-left: -103px;
+        margin-top: -56px;
+        padding-left: 15px;
+    }
+
+    .logo {
+        margin: 0;
+        height: 40%;
+        margin-right: -100px;
+        margin-left: 77px;
+        margin-top: -44px;
+    }
+
+    .bookbtn {
+        height: 60px;
+        padding: 0px 30px;
+        margin-top: 120px;
+        margin-right: auto;
+        margin-left: -324px;
+        padding-right: 80px;
+        padding-left: 80px;
+    }
+
+    .langSelector {
+        margin-left: 180px;
+        margin-top: -57px;
+    }
+}
+
+@media (max-width: 375px) {
+    .bookbtn {
+        margin-top: 120px;
+        margin-right: auto;
+        margin-left: -288px;
+        padding-right: 80px;
+        padding-left: 80px;
+    }
+
+    .logo {
+        height: 40%;
+        margin-left: 39px;
+        margin-top: -53px;
+    }
+
+    .langSelector {
+        margin-left: 160px;
+        margin-top: -57px;
+    }
+
+    .menu {
+        margin-top: -53px;
+    }
+
+    .marcador {
+        margin-top: 21px;
+    }
+}
+
+@media (max-width: 320px) {
+    .bookbtn {
+        margin-top: 108px;
+        margin-left: -268px;
+        
+    }
+
+    .marcador {
+        margin-top: 15px;
+    }
+
+    .logo {
+        height: 30%;
+        margin-top: -65px;
+    }
+
+    .menu {
+        margin-top: -66px;
+    }
+
+    .langSelector {
+        margin-left: 160px;
+        margin-top: -57px;
+    }
+}
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+    opacity: .94;
+  }
+  
+  .sidenav a {
+    /* padding: 8px 8px 8px 95px; */
+    text-decoration: none;
+    font-size: 25px;
+    /* color: #818181; */
+    color:#f1f1f1;
+    display: block;
+    transition: 0.3s;
+    padding: 22px 0;
+    text-align: center;
+  }
+  
+  .sidenav a:hover {
+    color: #f1f1f1;
+  }
+  
+  .sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+  
+  @media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+  }
+
+
+
