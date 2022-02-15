@@ -21,6 +21,11 @@ header ul {
     list-style: none;
 }
 
+.logoboonbtn {
+    width: 40%;
+    /* margin-top: 3%; */
+}
+
 /* Navigation */
 
 .nav-main {
